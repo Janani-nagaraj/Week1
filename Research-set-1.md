@@ -1,33 +1,82 @@
-What is HTTP?
-HTTP = HyperText Transfer Protocol
-It is a set of rules that allows a client and server to communicate.
+# Web Application Basics
 
-What is a Web Application?
-A web application is software that users access through a web browser.A web application is an application that runs through web technologies and is accessed over the web.
-Examples:
-Gmail
-Facebook
+**1. What is HTTP protocol?**
 
-What is a Web Server?
- web server as something that receives HTTP requests and sends responses.
+HTTP stands for HyperText Transfer Protocol. It is a protocol used for communication between a client and a server.
 
-What is HTTPS?
+Example: A browser sends a request to a server, and the server sends a response back.
 
-HTTPS = HTTP + security
-HTTP: Browser → Server
-HTTPS:Browser 🔒 Server
-HTTPS uses TLS encryption to protect data while it travels between client and server.
+**2. What is a web application?**
 
-Authentication vs Authorization
-Username + Password
- Authorization :You Cannot edit or delete a file
+A web application is a software application that we use through a web browser.
 
-Social Login
-Continue with Google Instead of creating a new password for that website.
+Examples: Gmail, Instagram, Amazon, Google Docs.
 
-Synchronous vs Asynchronous
-You have to wait for the response.
-Asynchronous-You don't have to wait doing nothing.
+**3. What is a web server?**
 
-What is REST?
-REST is a set of architectural principles/guidelines for designing networked applications, especially HTTP APIs.
+A web server receives HTTP requests from clients and sends HTTP responses back.
+
+Examples: Apache, Nginx, IIS.
+
+**4. What is HTTPS and why is it secure?**
+
+HTTPS stands for HyperText Transfer Protocol Secure. It is the secure version of HTTP and uses TLS to encrypt communication between the client and server.
+
+HTTPS provides:
+
+* Encryption
+* Data integrity
+* Server authentication
+
+**5. What is authentication and authorization?**
+
+Authentication means checking who the user is.
+
+Example: Logging in using an email and password.
+
+Authorization means checking what the user is allowed to do.
+
+Example: An admin can delete users, but a normal user cannot.
+
+
+**6. How does social login work?**
+
+Social login allows us to log in to an application using an existing account like Google.
+
+Example:
+
+Application → Google Login → Google verifies the user → Google gives the application a token/identity information → User is logged in.
+
+The application does not need to receive the user's Google password.
+
+**7. What is synchronous and asynchronous communication?**
+
+Synchronous communication means the application waits for the response before continuing.
+
+Example:
+
+App → Request → Server → Response → App continues
+
+Asynchronous communication means the application can continue doing other work while waiting for the response.
+
+Example:
+
+App → Request → Server
+
+App continues doing other work
+
+
+**8. What is REST?**
+
+REST stands for Representational State Transfer.
+
+REST is an architectural style used for designing web APIs. It uses HTTP methods to work with resources.
+
+Common HTTP methods:
+
+* GET → Read data
+* POST → Create data
+* PUT → Replace data
+* PATCH → Update part of data
+* DELETE → Delete data
+
